@@ -13,6 +13,7 @@
 		F6762A531C474FF40069C59F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6762A521C474FF40069C59F /* Assets.xcassets */; };
 		F6762A561C474FF40069C59F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6762A541C474FF40069C59F /* LaunchScreen.storyboard */; };
 		F6762A611C474FF40069C59F /* DataStructurePracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6762A601C474FF40069C59F /* DataStructurePracticeTests.swift */; };
+		F6762A6C1C4750490069C59F /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6762A6B1C4750480069C59F /* LinkedListNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F6762A5C1C474FF40069C59F /* DataStructurePracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructurePracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6762A601C474FF40069C59F /* DataStructurePracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructurePracticeTests.swift; sourceTree = "<group>"; };
 		F6762A621C474FF40069C59F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6762A6B1C4750480069C59F /* LinkedListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				F6762A521C474FF40069C59F /* Assets.xcassets */,
 				F6762A541C474FF40069C59F /* LaunchScreen.storyboard */,
 				F6762A571C474FF40069C59F /* Info.plist */,
+				F6762A6B1C4750480069C59F /* LinkedListNode.swift */,
 			);
 			path = DataStructurePractice;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6762A6C1C4750490069C59F /* LinkedListNode.swift in Sources */,
 				F6762A4E1C474FF40069C59F /* ViewController.swift in Sources */,
 				F6762A4C1C474FF40069C59F /* AppDelegate.swift in Sources */,
 			);
