@@ -43,6 +43,10 @@ class LinkedList<GenericType: Equatable> {
         var nextNodeToReverse: LinkedListNode<GenericType>?
         var currentNode: LinkedListNode<GenericType>?
         
+        if head.nextNode == nil {
+            return self
+        }
+        
         // make the head the tail
         
         currentNode = head.nextNode                     // current node is B
@@ -66,6 +70,20 @@ class LinkedList<GenericType: Equatable> {
         // current is C
         // C points at B
         // next node is D
+    }
+    
+    func recursiveReverse(currentNode: LinkedListNode<GenericType>?) {
+        guard let current = currentNode else { return }
+        
+        if currentNode?.nextNode == nil {
+            guard let node = currentNode else { return }
+            head = node
+            return
+        }
+        
+        recursiveReverse(current.nextNode!)
+        current.nextNode?.nextNode = current
+        current.nextNode = nil
     }
 }
 
