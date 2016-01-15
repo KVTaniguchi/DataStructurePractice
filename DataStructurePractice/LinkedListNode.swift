@@ -17,7 +17,6 @@ class LinkedListNode<GenericType> {
 class LinkedList<GenericType: Equatable> {
     private var head = LinkedListNode<GenericType>()
     
-    
     func addNode(key: GenericType) {
         
         if head.key == nil {
@@ -38,5 +37,37 @@ class LinkedList<GenericType: Equatable> {
             current = current?.nextNode
         }
     }
+    
+    func reverse() -> LinkedList{
+        var previousNode: LinkedListNode<GenericType>?
+        var nextNodeToReverse: LinkedListNode<GenericType>?
+        var currentNode: LinkedListNode<GenericType>?
+        
+        // make the head the tail
+        
+        currentNode = head.nextNode                     // current node is B
+        head.nextNode = nil                             // head is made to tail
+        nextNodeToReverse = currentNode?.nextNode       // next node is C
+        currentNode?.nextNode = head                    // B points at A
+        
+        // next node is C
+        // current node is B
+        
+        while nextNodeToReverse?.nextNode != nil {
+            previousNode = currentNode                  // prev is now C
+            currentNode = nextNodeToReverse             // current is now D
+            currentNode?.nextNode = previousNode        // D points at C
+            nextNodeToReverse = currentNode?.nextNode   // next node is E
+        }
+        
+        return LinkedList()
+        
+        // prev is B
+        // current is C
+        // C points at B
+        // next node is D
+    }
 }
+
+// A -> B -> C -> D -> E
 

@@ -14,6 +14,7 @@
 		F6762A561C474FF40069C59F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6762A541C474FF40069C59F /* LaunchScreen.storyboard */; };
 		F6762A611C474FF40069C59F /* DataStructurePracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6762A601C474FF40069C59F /* DataStructurePracticeTests.swift */; };
 		F6762A6C1C4750490069C59F /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6762A6B1C4750480069C59F /* LinkedListNode.swift */; };
+		F6C52AC51C48722300211459 /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C52AC41C48722300211459 /* HashTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		F6762A601C474FF40069C59F /* DataStructurePracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructurePracticeTests.swift; sourceTree = "<group>"; };
 		F6762A621C474FF40069C59F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6762A6B1C4750480069C59F /* LinkedListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
+		F6C52AC41C48722300211459 /* HashTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				F6762A541C474FF40069C59F /* LaunchScreen.storyboard */,
 				F6762A571C474FF40069C59F /* Info.plist */,
 				F6762A6B1C4750480069C59F /* LinkedListNode.swift */,
+				F6C52AC41C48722300211459 /* HashTable.swift */,
 			);
 			path = DataStructurePractice;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				F6762A6C1C4750490069C59F /* LinkedListNode.swift in Sources */,
 				F6762A4E1C474FF40069C59F /* ViewController.swift in Sources */,
+				F6C52AC51C48722300211459 /* HashTable.swift in Sources */,
 				F6762A4C1C474FF40069C59F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +394,7 @@
 				F6762A671C474FF40069C59F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6762A681C474FF40069C59F /* Build configuration list for PBXNativeTarget "DataStructurePracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +403,7 @@
 				F6762A6A1C474FF40069C59F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
