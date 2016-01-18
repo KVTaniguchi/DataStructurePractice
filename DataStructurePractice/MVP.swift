@@ -21,14 +21,17 @@ class MVPresenter: UIViewController {
         view.addSubview(presenterView)
         NSLayoutConstraint.activateConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[presenter]|", options: [], metrics: nil, views: ["presenter":presenterView]))
         NSLayoutConstraint.activateConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[presenter]|", options: [], metrics: nil, views: ["presenter":presenterView]))
+    
+        let model = MVPModel(backgroundColor: UIColor.orangeColor(), imageURL: "http://images.urbanoutfitters.com/is/image/UrbanOutfitters/20611299_021_b", name: "Nail Polish", price: "$10.0")
+        presenterView.model = model
         
         // code for pushing to a pdp
-        let model = MVPModel(backgroundColor: UIColor.whiteColor(), imageURL: "http://images.urbanoutfitters.com/is/image/UrbanOutfitters/20611299_021_b", name: "Nail Polish", price: "$10.0")
-        presenterView.model = model
     }
 }
 
 public class ModelPresenter: UIView {
+    // the core of this pattern is the model presenter - in this case it is a view that does the heavy lifting of layout.  the UIViewController handles navigation and information flow into the presenter
+    
     public private (set) var imageView = UIImageView()
     public private (set) var titleLabel = UILabel()
     public private (set) var priceLabel = UILabel()
@@ -50,6 +53,7 @@ public class ModelPresenter: UIView {
         imageView.widthAnchor.constraintEqualToConstant(100).active = true
         _ = [titleLabel, priceLabel].map({ (label) -> UILabel in
             label.textAlignment = .Center
+            label.backgroundColor = UIColor.whiteColor()
             label.font = UIFont(name: "Avenir", size: 20)
             return label
         })

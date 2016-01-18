@@ -51,7 +51,8 @@ class RootViewController: UIViewController {
     }
     
     func pushToMVC() {
-        
+        let mvcVC = MVCViewController()
+        navigationController?.pushViewController(mvcVC, animated: true)
     }
     
     func pushToMVP() {
