@@ -55,11 +55,13 @@ class RootViewController: UIViewController {
     }
     
     func pushToMVP() {
-        
+        let mvpVC = MVPresenter()
+        navigationController?.pushViewController(mvpVC, animated: true)
     }
     
     func pushToMVVM() {
-        
+        let mvvmVC = MvvmView()
+        navigationController?.pushViewController(mvvmVC, animated: true)
     }
 }
 
