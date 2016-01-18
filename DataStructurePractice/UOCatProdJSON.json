@@ -1,0 +1,34 @@
+{
+    "products" : [
+    {
+        "imageURL": "http://images.urbanoutfitters.com/is/image/UrbanOutfitters/34120642_059_b?$detailMain$",
+        "name": "PaperSelf Bracelet Tatoo",
+        "price": "10"
+    },
+    {
+        "imageURL": "http://images.urbanoutfitters.com/is/image/UrbanOutfitters/20611299_021_b",
+        "name": "MY JEWELRY BOX - DIAMONDS",
+        "price": "10"
+    },
+    {
+        "imageURL": "http://images.urbanoutfitters.com/is/image/UrbanOutfitters/33564022_001_b",
+        "name": "Rad Nails Nail Wraps",
+        "price": "12"
+    },
+    {
+        "imageURL": "http://images.urbanoutfitters.com/is/image/UrbanOutfitters/GIFTCARD_00_b",
+        "name": "YOU SO FINE",
+        "price": "14"
+    },
+    {
+        "imageURL": "http://images.urbanoutfitters.com/is/image/UrbanOutfitters/35380153_065_b",
+        "name": "WITH THE BAND",
+        "price": "8"
+    },
+    {
+        "imageURL": "http://images.urbanoutfitters.com/is/image/UrbanOutfitters/20611299_021_b",
+        "name": "Temporary Tattoo Kit",
+        "price": "24"
+    }
+    ]
+}
