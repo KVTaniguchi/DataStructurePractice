@@ -55,16 +55,16 @@ public class BSTree<T: Comparable> {
 //        
 //    }
     
-    func lowestValueNodeFrom(node: BSTree?) -> BSTree? {
+    func highestValueNodeFrom(node: BSTree?) -> BSTree? {
         if left == nil && right == nil {
             return self
         }
         
         if let leftKey = left where leftKey.key < key {
-            return lowestValueNodeFrom(node)
+            return highestValueNodeFrom(node)
         }
         if let rightKey = right where rightKey.key < key {
-            return lowestValueNodeFrom(node)
+            return highestValueNodeFrom(node)
         }
         return nil
     }

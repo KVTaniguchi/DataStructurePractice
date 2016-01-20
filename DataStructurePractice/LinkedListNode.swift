@@ -15,11 +15,12 @@ class LinkedListNode<GenericType> {
 }
 
 class LinkedList<GenericType: Equatable> {
-    private var head = LinkedListNode<GenericType>()
+    private(set) var head = LinkedListNode<GenericType>()
     
     func addNode(key: GenericType) {
+        print("adding key \(key) head key: \(head.key)")
         
-        if head.key == nil {
+        guard let _ = head.key else {
             head.key = key
             return
         }
@@ -30,12 +31,31 @@ class LinkedList<GenericType: Equatable> {
             if current?.nextNode != nil {
                 let childNode: LinkedListNode = LinkedListNode<GenericType>()
                 childNode.key = key
+                print("adding child key \(key)")
                 current?.nextNode = childNode
                 break
             }
             
             current = current?.nextNode
         }
+    }
+    
+    func nodeForKey(searchKey: GenericType) -> LinkedListNode<GenericType>? {
+        if head.key == searchKey {
+            return head
+        }
+        if var currentNode = head.nextNode, currentKey = currentNode.key {
+            while currentKey != searchKey {
+                if let nextNode = currentNode.nextNode, nextKey = nextNode.key {
+                    currentNode = nextNode
+                    currentKey = nextKey
+                }
+            }
+            
+            return currentNode
+        }
+        
+        return nil
     }
     
     func reverse() -> LinkedList{
