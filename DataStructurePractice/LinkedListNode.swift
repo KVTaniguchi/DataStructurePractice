@@ -18,25 +18,17 @@ class LinkedList<GenericType: Equatable> {
     private(set) var head = LinkedListNode<GenericType>()
     
     func addNode(key: GenericType) {
-        print("adding key \(key) head key: \(head.key)")
-        
-        guard let _ = head.key else {
+        if head.key == nil {
             head.key = key
-            return
         }
-        
-        var current: LinkedListNode? = head
-        
-        while current != nil {
-            if current?.nextNode != nil {
-                let childNode: LinkedListNode = LinkedListNode<GenericType>()
-                childNode.key = key
-                print("adding child key \(key)")
-                current?.nextNode = childNode
-                break
+        else {
+            var lastNode = head
+            while lastNode.nextNode != nil {
+                lastNode = lastNode.nextNode!
             }
-            
-            current = current?.nextNode
+            let newNode = LinkedListNode<GenericType>()
+            newNode.key = key
+            lastNode.nextNode = newNode
         }
     }
     
@@ -105,6 +97,22 @@ class LinkedList<GenericType: Equatable> {
         current.nextNode?.nextNode = current
         current.nextNode = nil
     }
+    
+
+     var count: Int {
+        if (head.key == nil) {
+            return 0
+        }
+        else {
+            var current = head
+            var x: Int = 1
+            while current.nextNode != nil {
+                current = current.nextNode!
+                x++
+            }
+            return x
+        }
+     }
 }
 
 // A -> B -> C -> D -> E
