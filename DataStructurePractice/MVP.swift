@@ -31,6 +31,7 @@ class MVPresenter: UIViewController {
 
 public class ModelPresenter: UIView {
     // the core of this pattern is the model presenter - in this case it is a view that does the heavy lifting of layout.  the UIViewController handles navigation and information flow into the presenter
+    // the model presenter 
     
     public private (set) var imageView = UIImageView()
     public private (set) var titleLabel = UILabel()
