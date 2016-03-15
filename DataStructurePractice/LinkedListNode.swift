@@ -116,4 +116,3 @@ class LinkedList<GenericType: Equatable> {
 }
 
 // A -> B -> C -> D -> E
-
