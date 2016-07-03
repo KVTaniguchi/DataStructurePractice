@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		817F5A145D2917116EB3B4CF /* Pods_DataStructurePractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB122BAA7C9FA488AD6FA6A /* Pods_DataStructurePractice.framework */; };
+		F63FD7B01D296D350088844A /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63FD7AF1D296D350088844A /* AVLTree.swift */; };
 		F6404D351C4F0946002BEDA7 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6404D341C4F0946002BEDA7 /* BinarySearchTree.swift */; };
 		F6762A4C1C474FF40069C59F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6762A4B1C474FF40069C59F /* AppDelegate.swift */; };
 		F6762A4E1C474FF40069C59F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6762A4D1C474FF40069C59F /* RootViewController.swift */; };
@@ -38,6 +39,7 @@
 		436D2BD0205BCD4209AD7395 /* Pods-DataStructurePractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructurePractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataStructurePractice/Pods-DataStructurePractice.debug.xcconfig"; sourceTree = "<group>"; };
 		BDB122BAA7C9FA488AD6FA6A /* Pods_DataStructurePractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataStructurePractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE62AC7E0275289F1B234FE /* Pods-DataStructurePractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructurePractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataStructurePractice/Pods-DataStructurePractice.release.xcconfig"; sourceTree = "<group>"; };
+		F63FD7AF1D296D350088844A /* AVLTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
 		F6404D341C4F0946002BEDA7 /* BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		F6762A481C474FF40069C59F /* DataStructurePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructurePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6762A4B1C474FF40069C59F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				F6C6F55A1C4C668E00CFC4D8 /* UOCatProdJSON.json */,
 				F6C6F55E1C4C670600CFC4D8 /* UOCatProductModel.swift */,
 				F6404D341C4F0946002BEDA7 /* BinarySearchTree.swift */,
+				F63FD7AF1D296D350088844A /* AVLTree.swift */,
 			);
 			path = DataStructurePractice;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				F6C52AC51C48722300211459 /* HashTable.swift in Sources */,
 				F6C6F5571C4C506100CFC4D8 /* MVC.swift in Sources */,
 				F6762A4C1C474FF40069C59F /* AppDelegate.swift in Sources */,
+				F63FD7B01D296D350088844A /* AVLTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
