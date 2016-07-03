@@ -108,7 +108,7 @@ class LinkedList<GenericType: Equatable> {
             var x: Int = 1
             while current.nextNode != nil {
                 current = current.nextNode!
-                x++
+                x += 1
             }
             return x
         }

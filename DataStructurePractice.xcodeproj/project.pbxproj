@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DAAA0C2D26DC7FD1F1097BB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090E938CE424392D3A274D3A /* Pods.framework */; };
+		817F5A145D2917116EB3B4CF /* Pods_DataStructurePractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB122BAA7C9FA488AD6FA6A /* Pods_DataStructurePractice.framework */; };
 		F6404D351C4F0946002BEDA7 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6404D341C4F0946002BEDA7 /* BinarySearchTree.swift */; };
 		F6762A4C1C474FF40069C59F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6762A4B1C474FF40069C59F /* AppDelegate.swift */; };
 		F6762A4E1C474FF40069C59F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6762A4D1C474FF40069C59F /* RootViewController.swift */; };
@@ -35,8 +35,9 @@
 
 /* Begin PBXFileReference section */
 		090E938CE424392D3A274D3A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D04CF8819A52FED716909C8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		267AA368B20D44128E39B117 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		436D2BD0205BCD4209AD7395 /* Pods-DataStructurePractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructurePractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataStructurePractice/Pods-DataStructurePractice.debug.xcconfig"; sourceTree = "<group>"; };
+		BDB122BAA7C9FA488AD6FA6A /* Pods_DataStructurePractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataStructurePractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE62AC7E0275289F1B234FE /* Pods-DataStructurePractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructurePractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataStructurePractice/Pods-DataStructurePractice.release.xcconfig"; sourceTree = "<group>"; };
 		F6404D341C4F0946002BEDA7 /* BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		F6762A481C474FF40069C59F /* DataStructurePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructurePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6762A4B1C474FF40069C59F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DAAA0C2D26DC7FD1F1097BB /* Pods.framework in Frameworks */,
+				817F5A145D2917116EB3B4CF /* Pods_DataStructurePractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,11 +76,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14B562C623C843D22606F327 /* Pods */ = {
+		9980020810B6DC13E54ED76F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0D04CF8819A52FED716909C8 /* Pods.debug.xcconfig */,
-				267AA368B20D44128E39B117 /* Pods.release.xcconfig */,
+				436D2BD0205BCD4209AD7395 /* Pods-DataStructurePractice.debug.xcconfig */,
+				CAE62AC7E0275289F1B234FE /* Pods-DataStructurePractice.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -90,8 +91,8 @@
 				F6762A4A1C474FF40069C59F /* DataStructurePractice */,
 				F6762A5F1C474FF40069C59F /* DataStructurePracticeTests */,
 				F6762A491C474FF40069C59F /* Products */,
-				14B562C623C843D22606F327 /* Pods */,
 				FAEA7D323F2D011FF5430725 /* Frameworks */,
+				9980020810B6DC13E54ED76F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				090E938CE424392D3A274D3A /* Pods.framework */,
+				BDB122BAA7C9FA488AD6FA6A /* Pods_DataStructurePractice.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,12 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6762A651C474FF40069C59F /* Build configuration list for PBXNativeTarget "DataStructurePractice" */;
 			buildPhases = (
-				F947871C123A50DD009A094D /* Check Pods Manifest.lock */,
+				734D87AE4273931F1BD518E8 /* [CP] Check Pods Manifest.lock */,
 				F6762A441C474FF40069C59F /* Sources */,
 				F6762A451C474FF40069C59F /* Frameworks */,
 				F6762A461C474FF40069C59F /* Resources */,
-				92053B3C4957CE5C065E0287 /* Embed Pods Frameworks */,
-				04171B09EEC3789E4F0162AC /* Copy Pods Resources */,
+				E3FCDB067FD2B60A5FE297E8 /* [CP] Embed Pods Frameworks */,
+				302FA2CA590B888AEB13B9FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,49 +243,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04171B09EEC3789E4F0162AC /* Copy Pods Resources */ = {
+		302FA2CA590B888AEB13B9FB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataStructurePractice/Pods-DataStructurePractice-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		92053B3C4957CE5C065E0287 /* Embed Pods Frameworks */ = {
+		734D87AE4273931F1BD518E8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F947871C123A50DD009A094D /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3FCDB067FD2B60A5FE297E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataStructurePractice/Pods-DataStructurePractice-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -418,7 +420,7 @@
 		};
 		F6762A661C474FF40069C59F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D04CF8819A52FED716909C8 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 436D2BD0205BCD4209AD7395 /* Pods-DataStructurePractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DataStructurePractice/Info.plist;
@@ -430,7 +432,7 @@
 		};
 		F6762A671C474FF40069C59F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 267AA368B20D44128E39B117 /* Pods.release.xcconfig */;
+			baseConfigurationReference = CAE62AC7E0275289F1B234FE /* Pods-DataStructurePractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DataStructurePractice/Info.plist;

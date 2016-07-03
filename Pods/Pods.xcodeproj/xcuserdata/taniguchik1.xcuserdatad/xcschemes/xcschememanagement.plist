@@ -14,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-DataStructurePractice.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A359BB348515759F66589A38DB514000</key>
+		<key>4F16B63B045DE880124B3D1AF6ED1176</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B9AEBBC18380E8860D4157A34E61FE8F</key>
+		<key>E96E13C4D3B5B5FC0651440734C2BF4D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F91226101ECE8FCFD221A3EC54481F82</key>
+		<key>F610C0EEE17F801D1399A44316DF9DD3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

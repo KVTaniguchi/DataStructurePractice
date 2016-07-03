@@ -13,7 +13,7 @@ public protocol DecodingError: ErrorType {
     /// The JSON key path to the object that failed to be decoded
     var path: [String] {get set}
 
-    /// The object that failed to be decoded
+    /// The JSON object that failed to be decoded
     var object: AnyObject {get}
     
     /// The root JSON object for which the `path` can be used to find `object`
@@ -32,22 +32,22 @@ extension DecodingError {
 
 public struct TypeMismatchError: DecodingError {
 
-    public init(expectedType: Any.Type, recievedType: Any.Type, object: AnyObject) {
+    public init(expectedType: Any.Type, receivedType: Any.Type, object: AnyObject) {
         self.expectedType = expectedType
-        self.recievedType = recievedType
+        self.receivedType = receivedType
         self.object = object
         self.path = []
     }
 
     public let expectedType: Any.Type
-    public let recievedType: Any.Type
+    public let receivedType: Any.Type
     
     public var path: [String]
     public let object: AnyObject
     public var rootObject: AnyObject?
     
     public var debugDescription: String {
-        return "TypeMismatchError expected: \(expectedType) but \(object) is of type \(recievedType) in \(formattedPath)"    }
+        return "TypeMismatchError expected: \(expectedType) but \(object) is of type \(receivedType) in \(formattedPath)"    }
 }
 
 public struct MissingKeyError: DecodingError {
@@ -69,7 +69,7 @@ public struct MissingKeyError: DecodingError {
     }
 }
 
-public struct RawRepresentableInitializationFailure: DecodingError {
+public struct RawRepresentableInitializationError: DecodingError {
     public let type: Any.Type
     public let rawValue: Any
     
@@ -85,7 +85,7 @@ public struct RawRepresentableInitializationFailure: DecodingError {
     }
     
     public var debugDescription: String {
-        return "RawRepresentableInitializationFailure: \(rawValue) could not be used to initialize \(type). (path: \(path))"
+        return "RawRepresentableInitializationError: \(rawValue) could not be used to initialize \(type). (path: \(path))"
     }
 }
 

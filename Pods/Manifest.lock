@@ -1,13 +1,15 @@
 PODS:
-  - Decodable (0.4)
-  - Kingfisher (1.9.2)
+  - Decodable (0.4.3)
+  - Kingfisher (2.4.1)
 
 DEPENDENCIES:
   - Decodable
   - Kingfisher
 
 SPEC CHECKSUMS:
-  Decodable: 67ebc3f3b94cb182444f839673ee1a7cd2a49abf
-  Kingfisher: 7b6df0fa9d211807152c32c46494f9bc08f0e07b
+  Decodable: ab6c7d02a5df949d3ab16b2696528a3241e37c76
+  Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: c1b7380149301309ac719ad371e24d4db1bea90d
+
+COCOAPODS: 1.0.1

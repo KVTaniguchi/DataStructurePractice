@@ -4,5 +4,7 @@ source 'git@github.com:urbn/URBNPrivatePodSpec.git'
 platform :ios, '9.0'
 
 use_frameworks!
+target 'DataStructurePractice' do
 pod 'Decodable'
 pod 'Kingfisher'
+end

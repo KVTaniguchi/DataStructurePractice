@@ -23,9 +23,9 @@ class RootViewController: UIViewController {
         MVVMButton.setTitle("MVVM", forState: .Normal)
         MVPButton.setTitle("MVP", forState: .Normal)
         
-        MVCButton.addTarget(self, action: "pushToMVC", forControlEvents: .TouchUpInside)
-        MVPButton.addTarget(self, action: "pushToMVP", forControlEvents: .TouchUpInside)
-        MVVMButton.addTarget(self, action: "pushToMVVM", forControlEvents: .TouchUpInside)
+        MVCButton.addTarget(self, action: #selector(RootViewController.pushToMVC), forControlEvents: .TouchUpInside)
+        MVPButton.addTarget(self, action: #selector(RootViewController.pushToMVP), forControlEvents: .TouchUpInside)
+        MVVMButton.addTarget(self, action: #selector(RootViewController.pushToMVVM), forControlEvents: .TouchUpInside)
         
         let buttons = [MVCButton, MVPButton, MVVMButton]
         _ = buttons.map({ (button) -> UIButton in
